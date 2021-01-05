@@ -1,0 +1,31 @@
+<!-- <body>
+  <app-nav-menu></app-nav-menu>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</body> -->
+
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+  <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/add">Add</a>
+      <a class="nav-item nav-link" routerLink="/profile">Profile</a>
+      <a class="nav-item nav-link" routerLink="/subscriptions">Subscriptions</a>
+      <a class="nav-item nav-link" routerLink="/showall">Add/Remove Channel From Sub</a>
+      <a class="nav-item nav-link" routerLink="/users">Users</a>
+
+      <a class="nav-item nav-link" (click)="logout()">Logout</a>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-6 offset-sm-3">
+              <app-alert></app-alert>
+              <router-outlet></router-outlet>
+          </div>
+      </div>
+  </div>
+</div>

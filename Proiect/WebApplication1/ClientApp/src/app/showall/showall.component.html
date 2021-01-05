@@ -1,0 +1,73 @@
+<div class="width">
+  <div class="subs">
+  <p>Subscriptions </p>
+  <table class="table table-striped ">
+    <thead>
+    <tr>
+      <th scope="col" style="width:10%">ID</th>
+      <th scope="col" style="width:20%">name</th>
+      <th scope="col" style="width:10%">period</th>
+      <th scope="col" style="width:10%">price</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let subscription of subscriptions;let i=index">
+      <th scope="row">{{subscription.id}}</th>
+      <td>{{subscription.name}}</td>
+      <td>{{subscription.period}}</td>
+      <td>{{subscription.price}}</td>
+
+      <td>
+        <button (click)='deleteAbonament(subscription.id)'><i class="far fa-trash-alt"></i>Delete</button>
+        <button (click)='setChannel(subscription.id)'><i class="far fa-trash-alt"></i>SetC</button>
+        <button (click)='removeChannel(subscription.id)'><i class="far fa-trash-alt"></i>RemoveC</button>
+      </td>
+
+
+    </tr>
+
+
+    </tbody>
+  </table>
+
+  </div>
+
+
+
+  <div class="channels">
+    <p>Channels</p>
+    <table class="table table-striped ">
+      <thead>
+      <tr>
+        <th scope="col" style="width:10%">ID</th>
+        <th scope="col" style="width:30%">Name</th>
+        <th scope="col" style="width:20%">Type</th>
+        <th scope="col" style="width:10%">Origine</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let channel of channels;let i=index">
+        <th scope="row">{{channel.id}}</th>
+        <td>{{channel.name}}</td>
+        <td>{{channel.tip}}</td>
+        <td>{{channel.origine}}</td>
+
+        <td>
+          <button (click)='deleteChannel(channel.id)'><i class="far fa-trash-alt"></i>Delete</button>
+        </td>
+
+
+
+      </tr>
+
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+

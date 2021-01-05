@@ -1,0 +1,11 @@
+.title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.div{
+  margin-bottom: 25px;
+  margin-right: 15px;
+  float: right;
+}

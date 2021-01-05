@@ -1,0 +1,19 @@
+
+<div class="modal-header bg-primary text-white">
+  <h4 class="modal-title" id="modal-basic-title">Set Channel</h4>
+</div>
+<div class="modal-body">
+  <form [formGroup]="setCForm" (ngSubmit)="onSubmit()" *ngIf="setCForm">
+      <div class="form-group row d-flex justify-content-center align-items-center">
+          <label for="ChannelId" class="col-form-label col-sm-2 text-right">Channel Id</label>
+          <div class="col-sm-5">
+              <input type="text" formControlName="ChannelId" class="form-control" />
+          </div>
+      </div>
+      <div class="modal-footer">
+          <button [disabled]="isLoading" class="btn btn-primary mr-2" (click)="modal.close('Cancel')">Cancel</button>
+          <button [disabled]="isLoading" class="btn btn-primary mr-2">Set</button>
+      </div>
+
+  </form>
+</div>

@@ -1,0 +1,13 @@
+
+  <p class = "title"> {{channles.name}}</p>
+
+        <h4 >Channels:</h4>
+        <ul *ngFor = "let channels of channles.modelRelations">
+          <li  *ngIf ='!channels.isDeleted'>
+
+            {{channels.channel.name}} </li>
+        </ul>
+        <div class="div">
+          <button class="btn btn-primary" (click)='subscribe()'>Sub</button>
+
+        </div>

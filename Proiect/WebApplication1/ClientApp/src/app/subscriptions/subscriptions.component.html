@@ -1,0 +1,24 @@
+<div class="container">
+  <div>
+    <div id="container-content">
+      <div class="container">
+
+        <div class="row pl-5">
+          <ng-container *ngFor=" let subscription of subscriptions; let ind = index">
+            <div class="view col mb-3 mr-3 p-0 hoverable" *ngIf='!subscription.isDeleted' (click)="openModal(subscription.id) ">
+
+              <img src="https://store-images.s-microsoft.com/image/apps.46851.9007199266246365.1f6d0339-ecce-4fe5-840a-652cd84111ad.ddef6be7-6304-41c0-a347-1d571b66dfb2?mode=scale&q=90&h=225&w=150"  class="img-fluid z-depth-1 rounded"  alt="hoverable"  />
+
+              <div class="detail">
+                <p id="p1">{{ subscription.name.toString() }} </p>
+
+
+              </div>
+            </div>
+            <div class="w-100" *ngIf="ind != 0 && (ind + 1) % 4 == 0"></div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

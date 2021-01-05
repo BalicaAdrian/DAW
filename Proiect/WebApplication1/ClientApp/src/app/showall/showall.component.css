@@ -1,0 +1,28 @@
+/* .table {
+    background-color: coral;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .container {
+    padding: 30px;
+    padding-left: 300px;
+  }*/
+
+  p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+  }
+
+  h1 {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+  .button{
+    margin-left: 14px;
+    margin-bottom: 16px;
+  }
